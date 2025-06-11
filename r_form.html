@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="r_form.css">
+</head>
+<body>
+    <div class="formm">
+    <h1>Registration Form</h1>
+    <p>Please fill in the form below.</p><br><hr>
+    <form><br>
+        Full Name <input type="text" name="name" required><br>
+        Address <textarea type="textarea" name="address"></textarea> <br>
+        City <input type="text" name="city" required><br>
+        State <input type="text" name="state" required><br><br>
+        Postal / Zip Code <input type="text" name="zip_code" required><br>
+        Country <select name="country">
+            <option value="select">Select</option>
+            <option value="india">India</option>
+            <option value="us">US</option>
+            <option value="uk">UK</option>
+            <option value="russia">Russia</option>
+            <option value="japan">Japan</option>
+            <option value="dubai">Dubai</option>
+            <option value="australia">Australia</option>
+            <option value="others">Others</option>
+        </select><br><br>
+        You Are: <br> <input type="radio" name="student"> Student<br>
+        <input type="radio" name="professional"><span>Professional</span><br>
+        <input type="radio" name="other"><span>Others</span><br><br>
+        Interested in (mark all that apply): <br>
+        <input type="checkbox" name="global_p">PR Global Professionals <br>
+        <input type="checkbox" name="global_v">PR Global Ventures<br>
+        <input type="checkbox" name="global_a">Becoming a PR Global Ambassador <br>
+        <input type="checkbox" name="global_c">Contacting a PR Global Ambassador<br><br>
+        Resume: <input type="file" name="resume"><br><br>
+        <input type="submit" name="submit" value="Submit">
+    </form>
+    </div>
+</body>
+</html>
